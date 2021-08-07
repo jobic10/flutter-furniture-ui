@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:furniture_ui/data/fake.dart';
 import 'package:furniture_ui/widgets/category_card.dart';
 import 'package:furniture_ui/widgets/header.dart';
+import 'package:furniture_ui/widgets/promo_card.dart';
 import 'package:furniture_ui/widgets/section.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -28,6 +29,21 @@ class _HomeScreenState extends State<HomeScreen> {
                   )
                   .toList(),
             ),
+            Section(
+                title: 'Today\'s Promo',
+                children: Fake.promos
+                    .map(
+                      (e) => PromoCard(
+                        backgroundImagePath: e.backgroundImagePath,
+                        reverseGradient: e.reverseGradient,
+                        subtitle: e.subtitle,
+                        title: e.title,
+                        caption: e.caption,
+                        imagePath: e.imagePath,
+                        tag: e.tag,
+                      ),
+                    )
+                    .toList())
           ],
         ),
       ),
