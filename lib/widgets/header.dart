@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_ui/data/fake.dart';
 import 'package:furniture_ui/widgets/cart.dart';
+import 'package:furniture_ui/widgets/search_bar.dart';
+import 'package:furniture_ui/widgets/section.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
@@ -31,6 +33,7 @@ class Header extends StatelessWidget {
               color: Colors.black38,
             ),
           ),
+          SearchBar(),
         ],
       ),
     );
