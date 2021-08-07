@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:furniture_ui/data/fake.dart';
+import 'package:furniture_ui/widgets/category_card.dart';
 import 'package:furniture_ui/widgets/header.dart';
 import 'package:furniture_ui/widgets/section.dart';
 
@@ -19,7 +21,12 @@ class _HomeScreenState extends State<HomeScreen> {
             Header(),
             Section(
               title: 'Categories',
-              children: [],
+              children: Fake.categories
+                  .map(
+                    (e) => CategoryCard(
+                        title: e.title, iconPath: e.iconPath, onTap: () {}),
+                  )
+                  .toList(),
             ),
           ],
         ),
