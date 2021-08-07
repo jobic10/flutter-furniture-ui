@@ -20,10 +20,10 @@ class Fake {
       imagePath: 'assets/images/furniture/furniture1.png',
     ),
     Promo(
-      backgroundImagePath: 'assets/images/splash2.png',
-      reverseGradient: true,
-      title: 'Get voucher gift',
-      subtitle: '\$50.00',
-    ),
+        backgroundImagePath: 'assets/images/splash2.png',
+        reverseGradient: true,
+        title: 'Get voucher gift',
+        subtitle: '\$50.00',
+        caption: '*For new members\nof Furniture shop'),
   ];
 }

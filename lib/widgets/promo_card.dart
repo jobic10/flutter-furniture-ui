@@ -47,6 +47,67 @@ class PromoCard extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
+      child: Stack(
+        children: [
+          if (imagePath != null)
+            Positioned(
+              right: 0,
+              bottom: 16,
+              child: Image.asset(
+                imagePath!,
+              ),
+            ),
+          Wrap(
+            direction: Axis.vertical,
+            children: [
+              Text(
+                title,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                  height: 1.5,
+                ),
+              ),
+              Text(
+                subtitle,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  height: 1.5,
+                ),
+              ),
+            ],
+          ),
+          Positioned(
+            left: 0,
+            bottom: 0,
+            child: this.tag != null
+                ? Container(
+                    padding: EdgeInsets.symmetric(horizontal: 5, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: tagBackgroundColor,
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    child: Text(
+                      tag!,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        height: 1.5,
+                      ),
+                    ),
+                  )
+                : Text(
+                    this.caption ?? title,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      height: 1.5,
+                    ),
+                  ),
+          ),
+        ],
+      ),
     );
   }
 }
