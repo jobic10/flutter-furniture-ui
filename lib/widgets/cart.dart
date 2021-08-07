@@ -21,13 +21,22 @@ class Cart extends StatelessWidget {
             top: -4,
             right: -4,
             child: Container(
-              width: 12,
-              height: 12,
+              width: 15,
+              height: 15,
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: primaryColor,
                 shape: BoxShape.circle,
                 border: Border.all(color: Colors.white, width: 1),
+              ),
+              child: Text(
+                '$numberOfItemsInCart',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 8,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ),
           ),

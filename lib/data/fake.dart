@@ -1,3 +1,3 @@
 class Fake {
-  static int numberOfItemsInCart = 1;
+  static int numberOfItemsInCart = 12;
 }
