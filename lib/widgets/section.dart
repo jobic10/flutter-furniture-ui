@@ -41,7 +41,7 @@ class Section extends StatelessWidget {
                         Icons.arrow_forward,
                         color: primaryColor,
                       ),
-                    )
+                    ),
                   ],
                 ),
                 onTap: () {},

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:furniture_ui/data/fake.dart';
 import 'package:furniture_ui/widgets/cart.dart';
 import 'package:furniture_ui/widgets/search_bar.dart';
-import 'package:furniture_ui/widgets/section.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
