@@ -38,4 +38,26 @@ class Fake {
     'assets/images/furniture/pexels-pixabay-276534.jpg',
     'assets/images/furniture/pexels-steve-johnson-923192.jpg',
   ];
+  static List<dynamic> menuItems = [
+    {
+      'icon': 'assets/icons/home.svg',
+      'label': 'Home',
+    },
+    {
+      'icon': 'assets/icons/box.svg',
+      'label': 'Delivery',
+    },
+    {
+      'icon': 'assets/icons/chat.svg',
+      'label': 'Messages',
+    },
+    {
+      'icon': 'assets/icons/wallet.svg',
+      'label': 'Wallet',
+    },
+    {
+      'icon': 'assets/icons/profile.svg',
+      'label': 'Profile',
+    },
+  ];
 }
