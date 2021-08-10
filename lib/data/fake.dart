@@ -26,4 +26,16 @@ class Fake {
         subtitle: '\$50.00',
         caption: '*For new members\nof Furniture shop'),
   ];
+
+  static List<String> trending = [
+    'assets/images/furniture/jacalyn-beales-435629-unsplash.png',
+    'assets/images/furniture/sven-brandsma-1379481-unsplash.png',
+  ];
+
+  static List<String> featured = [
+    'assets/images/furniture/pexels-eric-montanah-1350789.jpg',
+    'assets/images/furniture/pexels-patryk-kamenczak-775219.jpg',
+    'assets/images/furniture/pexels-pixabay-276534.jpg',
+    'assets/images/furniture/pexels-steve-johnson-923192.jpg',
+  ];
 }
