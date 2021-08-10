@@ -18,6 +18,10 @@ class ImageCard extends StatelessWidget {
             blurRadius: 15,
           )
         ],
+        image: DecorationImage(
+          image: AssetImage(this.imagePath),
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }
