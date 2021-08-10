@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_ui/data/fake.dart';
+import 'package:furniture_ui/widgets/app_bottom_nav.dart';
 import 'package:furniture_ui/widgets/category_card.dart';
 import 'package:furniture_ui/widgets/header.dart';
 import 'package:furniture_ui/widgets/image_card.dart';
@@ -17,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: AppBottomNavigation(),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
