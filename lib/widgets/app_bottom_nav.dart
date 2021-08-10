@@ -11,6 +11,14 @@ class AppBottomNavigation extends StatefulWidget {
 }
 
 class _AppBottomNavigationState extends State<AppBottomNavigation> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -24,8 +32,8 @@ class _AppBottomNavigationState extends State<AppBottomNavigation> {
           icon: SvgPicture.asset(i['icon']),
         );
       }).toList(),
-      currentIndex: 0,
-      onTap: (val) {},
+      currentIndex: _selectedIndex,
+      onTap: _onItemTapped,
       selectedItemColor: primaryColor,
     );
   }
