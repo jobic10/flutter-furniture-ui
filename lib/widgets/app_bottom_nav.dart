@@ -22,6 +22,19 @@ class _AppBottomNavigationState extends State<AppBottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      backgroundColor: Colors.white,
+      showSelectedLabels: true,
+      unselectedItemColor: Colors.black87,
+      elevation: 3,
+      type: BottomNavigationBarType.fixed,
+      selectedLabelStyle: TextStyle(
+        height: 1.5,
+        fontSize: 12,
+      ),
+      unselectedLabelStyle: TextStyle(
+        height: 1.3,
+        fontSize: 10,
+      ),
       items: Fake.menuItems.map((i) {
         return BottomNavigationBarItem(
           label: i['label'],
