@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:furniture_ui/data/fake.dart';
+import 'package:furniture_ui/screens/home/widgets/cart.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
@@ -19,6 +21,7 @@ class Header extends StatelessWidget {
       child: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 width: 60,
@@ -40,11 +43,14 @@ class Header extends StatelessWidget {
                 width: 60,
                 alignment: Alignment.centerRight,
                 child: Wrap(
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  spacing: 10,
                   children: [
                     SvgPicture.asset(
                       'assets/icons/search.svg',
                       height: 18,
                     ),
+                    Cart(numberOfItemsInCart: Fake.numberOfItemsInCart)
                   ],
                 ),
               ),

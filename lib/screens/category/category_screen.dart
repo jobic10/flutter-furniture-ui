@@ -16,12 +16,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
       bottomNavigationBar: AppBottomNavigation(),
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: SliverPersistentHeader(
-            delegate: HeaderSliver(minExtent: 120, maxExtent: 120),
-            pinned: true,
-            floating: true,
-          ),
+        child: CustomScrollView(
+          slivers: [
+            SliverPersistentHeader(
+              delegate: HeaderSliver(minExtent: 120, maxExtent: 120),
+              pinned: true,
+              floating: true,
+            ),
+          ],
         ),
       ),
     );
