@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_ui/data/fake.dart';
 import 'package:furniture_ui/screens/category/category_screen.dart';
-import 'package:furniture_ui/widgets/app_bottom_nav.dart';
-import 'package:furniture_ui/widgets/category_card.dart';
-import 'package:furniture_ui/widgets/header.dart';
-import 'package:furniture_ui/widgets/image_card.dart';
-import 'package:furniture_ui/widgets/promo_card.dart';
-import 'package:furniture_ui/widgets/section.dart';
+import 'widgets/app_bottom_nav.dart';
+import 'widgets/category_card.dart';
+import 'widgets/header.dart';
+import 'widgets/image_card.dart';
+import 'widgets/promo_card.dart';
+import 'widgets/section.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key? key}) : super(key: key);
