@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:furniture_ui/constants/colors.dart';
 
+import 'filter_list.dart';
+
 class FilterModalBottomSheet extends StatelessWidget {
   const FilterModalBottomSheet({Key? key}) : super(key: key);
 
@@ -106,7 +108,17 @@ class FilterModalBottomSheet extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
+            Padding(
+              child: Text(
+                'Item Filter',
+                style: TextStyle(fontSize: 20),
+              ),
+              padding: const EdgeInsets.only(top: 20),
+            ),
+            Container(
+              child: FilterList(onSelect: (selected) => print(selected)),
+            ),
           ],
         ),
       ),
