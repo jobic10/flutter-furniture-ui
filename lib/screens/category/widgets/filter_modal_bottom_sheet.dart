@@ -141,6 +141,7 @@ class FilterModalBottomSheet extends StatelessWidget {
               onSelect: (color) => print(color),
             ),
             Container(
+              padding: EdgeInsets.all(20),
               width: double.infinity,
               margin: EdgeInsets.symmetric(vertical: 20),
               child: ElevatedButton(
