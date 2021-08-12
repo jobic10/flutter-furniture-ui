@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:furniture_ui/widgets/app_bottom_nav.dart';
-
+import 'package:furniture_ui/screens/home/widgets/app_bottom_nav.dart';
 import 'widgets/header_sliver.dart';
 
 class CategoryScreen extends StatefulWidget {
