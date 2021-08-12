@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:furniture_ui/data/fake.dart';
+import 'package:furniture_ui/screens/category/widgets/vertical_sep.dart';
 import 'package:furniture_ui/screens/home/widgets/cart.dart';
 
 import 'action_button.dart';
 
 class Header extends StatelessWidget {
-  const Header({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -70,29 +69,29 @@ class Header extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                ActionButton(),
+                ActionButton(
+                  imagePath: 'assets/icons/controls.svg',
+                  title: 'Filter',
+                  onTap: () {},
+                  isActive: true,
+                ),
                 VerticalSeperator(),
+                ActionButton(
+                  imagePath: 'assets/icons/sort.svg',
+                  title: 'Filter',
+                  onTap: () {},
+                ),
                 VerticalSeperator(),
+                ActionButton(
+                  imagePath: 'assets/icons/list.svg',
+                  title: 'Filter',
+                  onTap: () {},
+                ),
               ],
             ),
           )
         ],
       ),
-    );
-  }
-}
-
-class VerticalSeperator extends StatelessWidget {
-  const VerticalSeperator({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black12,
-      width: 1,
-      height: 20,
     );
   }
 }
