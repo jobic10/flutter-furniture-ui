@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:furniture_ui/constants/colors.dart';
 import 'package:furniture_ui/data/fake.dart';
 import 'package:furniture_ui/screens/home/widgets/cart.dart';
+
+import 'action_button.dart';
 
 class Header extends StatelessWidget {
   const Header({Key? key}) : super(key: key);
@@ -21,7 +24,7 @@ class Header extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 28,
               vertical: 16,
             ),
@@ -61,9 +64,36 @@ class Header extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 28),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                ActionButton(),
+                VerticalSeperator(),
+                VerticalSeperator(),
+              ],
+            ),
           )
         ],
       ),
+    );
+  }
+}
+
+class VerticalSeperator extends StatelessWidget {
+  const VerticalSeperator({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.black12,
+      width: 1,
+      height: 20,
     );
   }
 }
