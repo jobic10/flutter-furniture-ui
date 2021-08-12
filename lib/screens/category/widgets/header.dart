@@ -5,6 +5,7 @@ import 'package:furniture_ui/screens/category/widgets/vertical_sep.dart';
 import 'package:furniture_ui/screens/home/widgets/cart.dart';
 
 import 'action_button.dart';
+import 'filter_modal_bottom_sheet.dart';
 
 class Header extends StatelessWidget {
   @override
@@ -100,8 +101,15 @@ class Header extends StatelessWidget {
 
 void _settingsModalBottomSheet(BuildContext context) {
   showModalBottomSheet(
-      context: context,
-      builder: (BuildContext context) {
-        return Container();
-      });
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.only(
+        topLeft: Radius.circular(20),
+        topRight: Radius.circular(20),
+      ),
+    ),
+    context: context,
+    builder: (BuildContext context) {
+      return FilterModalBottomSheet();
+    },
+  );
 }
