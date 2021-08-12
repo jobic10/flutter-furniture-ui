@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:furniture_ui/constants/colors.dart';
 import 'package:furniture_ui/data/fake.dart';
 import 'package:furniture_ui/screens/home/widgets/cart.dart';
 
