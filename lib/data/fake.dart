@@ -1,4 +1,5 @@
 import 'package:furniture_ui/models/category.dart';
+import 'package:furniture_ui/models/item.dart';
 import 'package:furniture_ui/models/promo.dart';
 
 class Fake {
@@ -59,5 +60,49 @@ class Fake {
       'icon': 'assets/icons/profile.svg',
       'label': 'Profile',
     },
+  ];
+  static List<Item> furnitures = [
+    Item(
+      name: 'Chair Dacey li - Black',
+      discountPercent: 30,
+      imagePath: 'assets/images/furnitures/items/dacey.png',
+      rating: 4.5,
+      originalPrice: 80,
+    ),
+    Item(
+      name: 'Elly Sofa Patchwork',
+      discountPercent: 62,
+      imagePath: 'assets/images/furnitures/items/elly.png',
+      rating: 4.2,
+      originalPrice: 889,
+    ),
+    Item(
+      name: 'Dobson Table - White',
+      discountPercent: 23,
+      imagePath: 'assets/images/furnitures/items/table 2.png',
+      rating: 3.7,
+      originalPrice: 140,
+    ),
+    Item(
+      name: 'Nagano Table - Brown',
+      discountPercent: 10,
+      imagePath: 'assets/images/furnitures/items/ezgif.con-crop.png',
+      rating: 4.8,
+      originalPrice: 800,
+    ),
+    Item(
+      name: 'Chair Dacey li - Black',
+      discountPercent: 7,
+      imagePath: 'assets/images/furnitures/items/CHair 2.png',
+      rating: 4.0,
+      originalPrice: 35,
+    ),
+    Item(
+      name: 'Chair Dacey li - Feather Grey',
+      discountPercent: 17,
+      imagePath: 'assets/images/furnitures/items/chair3.png',
+      rating: 4.9,
+      originalPrice: 720,
+    ),
   ];
 }
