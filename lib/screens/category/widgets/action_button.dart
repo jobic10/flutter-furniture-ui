@@ -18,7 +18,7 @@ class ActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onTap,
+      onTap: isActive ? onTap : null,
       child: Wrap(
         spacing: 10,
         crossAxisAlignment: WrapCrossAlignment.center,
