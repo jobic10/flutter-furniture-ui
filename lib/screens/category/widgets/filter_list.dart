@@ -34,7 +34,9 @@ class _FilterListState extends State<FilterList> {
       selected.remove(title);
     else
       selected.add(title);
-    setState(() {});
+    setState(() {
+      widget.onSelect(selected);
+    });
   }
 
   @override
@@ -47,8 +49,6 @@ class _FilterListState extends State<FilterList> {
                 title: e['title'],
                 selected: this.selected.contains(e['title']),
                 onTap: () {
-                  print('You wanna know about this? => $this');
-                  print('${this.options}');
                   toggle(e['title']);
                 },
               ),
