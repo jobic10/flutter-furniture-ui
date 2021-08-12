@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-import 'package:furniture_ui/constants/colors.dart';
-
 import 'filter_list_item.dart';
 
 class FilterList extends StatefulWidget {
