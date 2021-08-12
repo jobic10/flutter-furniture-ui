@@ -103,6 +103,8 @@ class Header extends StatelessWidget {
 
 void _settingsModalBottomSheet(BuildContext context) {
   showModalBottomSheet(
+    isScrollControlled: true,
+    backgroundColor: Colors.white,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(20),

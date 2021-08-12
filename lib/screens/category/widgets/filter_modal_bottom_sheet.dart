@@ -133,8 +133,34 @@ class FilterModalBottomSheet extends StatelessWidget {
                 Colors.black87,
                 Colors.blue,
                 Colors.red,
+                Colors.cyan,
+                Colors.yellow,
+                Colors.purple,
+                Colors.pink,
               ],
               onSelect: (color) => print(color),
+            ),
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.symmetric(vertical: 20),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
+                  backgroundColor: MaterialStateProperty.all(primaryColor),
+                  foregroundColor: MaterialStateProperty.all(Colors.white),
+                ),
+                child: Text(
+                  'Apply Filter',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onPressed: () {
+                  close(context);
+                },
+              ),
             ),
           ],
         ),

@@ -46,21 +46,22 @@ class _ColorListState extends State<ColorList> {
                     width: 45,
                     height: 45,
                     decoration: BoxDecoration(
-                        border: colorSelected == color
-                            ? Border.all(
-                                width: 3,
-                                color: primaryColor,
-                              )
-                            : null,
-                        color: color,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.1),
-                            offset: Offset.zero,
-                            blurRadius: 15,
-                          )
-                        ]),
+                      border: colorSelected == color
+                          ? Border.all(
+                              width: 3,
+                              color: primaryColor,
+                            )
+                          : null,
+                      color: color,
+                      shape: BoxShape.circle,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          offset: Offset.zero,
+                          blurRadius: 15,
+                        )
+                      ],
+                    ),
                   ),
                 ),
               )
