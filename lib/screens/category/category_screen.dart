@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furniture_ui/data/fake.dart';
 import 'package:furniture_ui/screens/home/widgets/app_bottom_nav.dart';
 import 'widgets/header_sliver.dart';
 
@@ -22,6 +23,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
               delegate: HeaderSliver(minExtent: 120, maxExtent: 120),
               pinned: true,
               floating: true,
+            ),
+            SliverGrid.count(
+              crossAxisCount: 2,
+              childAspectRatio: 0.65,
+              children: [FurnitureGridItem(item: Fake.furniture[0])],
             ),
           ],
         ),
