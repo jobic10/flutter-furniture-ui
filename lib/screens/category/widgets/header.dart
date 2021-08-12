@@ -72,19 +72,21 @@ class Header extends StatelessWidget {
                 ActionButton(
                   imagePath: 'assets/icons/controls.svg',
                   title: 'Filter',
-                  onTap: () {},
+                  onTap: () {
+                    _settingsModalBottomSheet(context);
+                  },
                   isActive: true,
                 ),
                 VerticalSeperator(),
                 ActionButton(
                   imagePath: 'assets/icons/sort.svg',
-                  title: 'Filter',
+                  title: 'Sort',
                   onTap: () {},
                 ),
                 VerticalSeperator(),
                 ActionButton(
                   imagePath: 'assets/icons/list.svg',
-                  title: 'Filter',
+                  title: 'List',
                   onTap: () {},
                 ),
               ],
@@ -94,4 +96,12 @@ class Header extends StatelessWidget {
       ),
     );
   }
+}
+
+void _settingsModalBottomSheet(BuildContext context) {
+  showModalBottomSheet(
+      context: context,
+      builder: (BuildContext context) {
+        return Container();
+      });
 }
