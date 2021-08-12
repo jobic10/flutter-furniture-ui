@@ -17,10 +17,12 @@ class Header extends StatelessWidget {
             color: Colors.black.withOpacity(0.05),
             offset: Offset(0, 10),
             blurRadius: 10,
-          )
+          ),
         ],
+        color: Colors.white,
       ),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(
