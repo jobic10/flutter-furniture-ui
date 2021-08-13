@@ -6,14 +6,17 @@ import 'package:furniture_ui/models/item.dart';
 
 class FurnitureGridItem extends StatelessWidget {
   final Item item;
+  final EdgeInsets margin;
   const FurnitureGridItem({
     Key? key,
     required this.item,
+    required this.margin,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: margin,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(7),

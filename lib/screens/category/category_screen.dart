@@ -28,11 +28,18 @@ class _CategoryScreenState extends State<CategoryScreen> {
             SliverGrid.count(
               crossAxisCount: 2,
               childAspectRatio: 0.65,
+              mainAxisSpacing: 16,
+              crossAxisSpacing: 16,
               children: Fake.furnitures
                   .asMap()
                   .entries
                   .map(
-                    (e) => FurnitureGridItem(item: e.value),
+                    (e) => FurnitureGridItem(
+                      item: e.value,
+                      margin: EdgeInsets.only(
+                          left: e.key.isEven ? 15 : 0,
+                          right: e.key.isOdd ? 15 : 0),
+                    ),
                   )
                   .toList(),
             ),
