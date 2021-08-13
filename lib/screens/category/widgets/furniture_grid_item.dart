@@ -64,6 +64,42 @@ class FurnitureGridItem extends StatelessWidget {
               ],
             ),
           ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                item.name,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 13,
+                  height: 1.5,
+                ),
+              ),
+              Wrap(
+                spacing: 4,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  Text(
+                    '${Item.format(item.price)}',
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: primaryColor,
+                      height: 1.5,
+                    ),
+                  ),
+                  if (item.discountPercent > 0)
+                    Text(
+                      '${Item.format(item.originalPrice)}',
+                      style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.black38,
+                          height: 1.5,
+                          decoration: TextDecoration.lineThrough),
+                    ),
+                ],
+              ),
+            ],
+          )
         ],
       ),
     );
