@@ -86,7 +86,7 @@ class Fake {
     Item(
       name: 'Nagano Table - Brown',
       discountPercent: 10,
-      imagePath: 'assets/images/furniture/items/ezgif.con-crop.png',
+      imagePath: 'assets/images/furniture/items/ezgif.com-crop.png',
       rating: 4.8,
       originalPrice: 800,
     ),
