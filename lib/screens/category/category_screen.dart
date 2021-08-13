@@ -28,9 +28,13 @@ class _CategoryScreenState extends State<CategoryScreen> {
             SliverGrid.count(
               crossAxisCount: 2,
               childAspectRatio: 0.65,
-              children: [
-                FurnitureGridItem(item: Fake.furnitures[0]),
-              ],
+              children: Fake.furnitures
+                  .asMap()
+                  .entries
+                  .map(
+                    (e) => FurnitureGridItem(item: e.value),
+                  )
+                  .toList(),
             ),
           ],
         ),
